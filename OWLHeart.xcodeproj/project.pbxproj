@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7336B2761A1D0011004B68DB /* shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 7336B2751A1D0011004B68DB /* shader.glsl */; };
 		73E6C8C71A163FDE0080C530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E6C8C61A163FDE0080C530 /* main.m */; };
 		73E6C8CA1A163FDE0080C530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E6C8C91A163FDE0080C530 /* AppDelegate.m */; };
-		73E6C8CD1A163FDE0080C530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E6C8CC1A163FDE0080C530 /* ViewController.m */; };
+		73E6C8CD1A163FDE0080C530 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73E6C8CC1A163FDE0080C530 /* ViewController.mm */; };
 		73E6C8D01A163FDE0080C530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E6C8CE1A163FDE0080C530 /* Main.storyboard */; };
 		73E6C8D21A163FDE0080C530 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E6C8D11A163FDE0080C530 /* Images.xcassets */; };
 		73E6C8D51A163FDE0080C530 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E6C8D31A163FDE0080C530 /* LaunchScreen.xib */; };
@@ -33,13 +34,14 @@
 /* Begin PBXFileReference section */
 		03DE73FB179F0EE893E1D755 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0FFA781508BC1FAEABBA0F0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7336B2751A1D0011004B68DB /* shader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader.glsl; sourceTree = "<group>"; };
 		73E6C8C11A163FDE0080C530 /* OWLHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWLHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E6C8C51A163FDE0080C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E6C8C61A163FDE0080C530 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73E6C8C81A163FDE0080C530 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73E6C8C91A163FDE0080C530 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		73E6C8CB1A163FDE0080C530 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		73E6C8CC1A163FDE0080C530 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		73E6C8CC1A163FDE0080C530 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		73E6C8CF1A163FDE0080C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73E6C8D11A163FDE0080C530 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73E6C8D41A163FDE0080C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -106,7 +108,8 @@
 				73E6C8C81A163FDE0080C530 /* AppDelegate.h */,
 				73E6C8C91A163FDE0080C530 /* AppDelegate.m */,
 				73E6C8CB1A163FDE0080C530 /* ViewController.h */,
-				73E6C8CC1A163FDE0080C530 /* ViewController.m */,
+				73E6C8CC1A163FDE0080C530 /* ViewController.mm */,
+				7336B2751A1D0011004B68DB /* shader.glsl */,
 				73E6C8CE1A163FDE0080C530 /* Main.storyboard */,
 				73E6C8D11A163FDE0080C530 /* Images.xcassets */,
 				73E6C8D31A163FDE0080C530 /* LaunchScreen.xib */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E6C8D01A163FDE0080C530 /* Main.storyboard in Resources */,
+				7336B2761A1D0011004B68DB /* shader.glsl in Resources */,
 				73E6C8D51A163FDE0080C530 /* LaunchScreen.xib in Resources */,
 				73E6C8FB1A1671000080C530 /* Viewfinder.gif in Resources */,
 				73E6C8D21A163FDE0080C530 /* Images.xcassets in Resources */,
@@ -302,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E6C8CD1A163FDE0080C530 /* ViewController.m in Sources */,
+				73E6C8CD1A163FDE0080C530 /* ViewController.mm in Sources */,
 				73E6C8CA1A163FDE0080C530 /* AppDelegate.m in Sources */,
 				73E6C8C71A163FDE0080C530 /* main.m in Sources */,
 			);
