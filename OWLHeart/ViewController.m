@@ -144,8 +144,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     NSDictionary *imageOptions = nil;
     
-    imageOptions = [NSDictionary dictionaryWithObject:@6
-                                               forKey:CIDetectorImageOrientation];
+    imageOptions = @{CIDetectorImageOrientation: @6};
     
     NSArray *features = [self.faceDetector featuresInImage:ciImage
                                                    options:imageOptions];
