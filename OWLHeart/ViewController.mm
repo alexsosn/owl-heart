@@ -26,9 +26,6 @@
 
 @property (nonatomic, strong) IBOutlet UIImageView *faceView;
 
-
-// CV tutorial
-
 @end
 
 @implementation ViewController
@@ -82,8 +79,7 @@
         self.videoDataOutput = [[AVCaptureVideoDataOutput alloc] init];
         
         // we want BGRA, both CoreGraphics and OpenGL work well with 'BGRA'
-        NSDictionary *rgbOutputSettings = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCMPixelFormat_32BGRA]
-                                                                      forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+        NSDictionary *rgbOutputSettings = @{(id)kCVPixelBufferPixelFormatTypeKey: [NSNumber numberWithInt:kCMPixelFormat_32BGRA]};
         [self.videoDataOutput setVideoSettings:rgbOutputSettings];
         [self.videoDataOutput setAlwaysDiscardsLateVideoFrames:YES]; // discard if the data output queue is blocked
         
